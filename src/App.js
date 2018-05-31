@@ -29,7 +29,7 @@ class App extends Component {
         </Wrapper><hr/>
 
         <FindOutMore>
-          <Hamburger />
+          // <Hamburger />
         </FindOutMore>
 
 
