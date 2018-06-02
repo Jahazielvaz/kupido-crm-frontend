@@ -13,3 +13,9 @@ hr{
   /* text-align: center; */
   margin: 40px;
 }
+
+#nav1{
+  text-align: center;
+  position: relative;
+  top: 165px;
+}
