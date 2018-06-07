@@ -10,30 +10,31 @@ import { TomatoButton }from './components/CSS/Button';
 import { Container } from './components/partials/Container';
 import { FindOutMore } from './components/findOutMore/FindOutMore';
 import Hamburger from './components/partials/hamburger/Hamburger';
-// import {FindoutHeader} from './components/findOutMore/FindoutHeader';
+import FindoutLink from './components/Navigation';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import {FindoutHeader} from './components/findOutMore/FindoutHeader';
 
-
+import * as routes from './routes/routes';
 
 
 class App extends Component {
   render() {
     return (
-      <div id="main-container">
-        <Wrapper>
-          <Container>
-            <Header />
-            <Button primary>Member Portal</Button>
-            <Button primary>Find Out More</Button>
+      <Router>
+        <div id="main-container">
+          <Wrapper>
+            <Container>
+              <Header />
+            </Container>
+          </Wrapper><hr/>
 
-          </Container>
-        </Wrapper><hr/>
-
-        <FindOutMore>
-          // <Hamburger />
-        </FindOutMore>
+          <FindOutMore>
+            // <Hamburger />
+          </FindOutMore>
 
 
-      </div>
+        </div>
+      </Router>
     );
   }
 }
