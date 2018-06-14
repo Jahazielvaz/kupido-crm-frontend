@@ -6,6 +6,13 @@ import '../App.css'
 
 import * as routes from '../routes/routes';
 
+const MainLinks = () =>
+  <div>
+    <ul>
+      <li><Link to={routes.OUR_POLICY}></Link></li>
+    </ul>
+  </div>
+
 const FindoutLink = () =>
   <div id="na">
     <ul>

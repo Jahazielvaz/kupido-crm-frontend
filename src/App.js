@@ -13,6 +13,7 @@ import Hamburger from './components/partials/hamburger/Hamburger';
 import FindoutLink from './components/Navigation';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import {FindoutHeader} from './components/findOutMore/FindoutHeader';
+// import {Navigation} from './src/Navigation';
 
 import * as routes from './routes/routes';
 
@@ -22,15 +23,17 @@ class App extends Component {
     return (
       <Router>
         <div id="main-container">
-          <Wrapper>
-            <Container>
-              <Header />
-            </Container>
-          </Wrapper><hr/>
+          <FindoutLink />
 
-          <FindOutMore>
-            // <Hamburger />
-          </FindOutMore>
+            <Wrapper>
+              <Container>
+                <Header />
+              </Container>
+            </Wrapper><hr/>
+
+            {/* <FindOutMore>
+              // <Hamburger />
+            </FindOutMore> */}
 
 
         </div>
