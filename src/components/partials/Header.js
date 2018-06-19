@@ -18,8 +18,6 @@ const Header = () =>
       <Button primary>Member Portal</Button>
       <FindoutLink />
 
-      <Route exact path={routes.FIND_OUT_MORE} component= {() => <FindOutMore />} />
-      {/* <Button primary>Find Out More</Button> */}
     </header>
   </Router>
 
