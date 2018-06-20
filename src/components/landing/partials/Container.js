@@ -12,4 +12,4 @@ import styled from 'styled-components';
   color: white;
 `;
 
-export { Container };
+export default Container;

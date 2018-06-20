@@ -3,16 +3,16 @@ import styled from 'styled-components';
 import './App.css'
 
 //Custom components
-import Button from './components/CSS/Button';
-import Header from './components/partials/Header';
-import { Wrapper } from './components/Wrapper';
-import { TomatoButton }from './components/CSS/Button';
-import { Container } from './components/partials/Container';
-import { FindOutMore } from './components/findOutMore/FindOutMore';
+// import { FindOutMore } from './components/findOutMore/FindOutMore';
 import Hamburger from './components/partials/hamburger/Hamburger';
-import FindoutLink from './components/Navigation';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import {FindoutHeader} from './components/findOutMore/FindoutHeader';
+// import FindoutLink from './components/Navigation';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import {FindoutHeader} from './components/findOutMore/FindoutHeader';
+import Landing from './components/landing/Landing';
+import FindoutLanding from './components/findoutmore/FindoutLanding';
+import { LandingLinks } from './components/Navigation';
+
+
 
 
 import * as routes from './routes/routes';
@@ -23,20 +23,13 @@ class App extends Component {
     return (
       <Router>
         <div id="main-container">
-        
+          <LandingLinks />
 
-            <Wrapper>
-              <Container>
-                <Header />
-              </Container>
-            </Wrapper><hr/>
+          <Switch>
 
-            <FindOutMore>
-
-              {/* <Route exact path={routes.FIND_OUT_MORE} component= {() => <FindOutMore />} /> */}
-            </FindOutMore>
-
-
+            <Route path="/" component={Landing} exact />
+            <Route path="/findoutmore" component={FindoutLanding} />
+          </Switch>
         </div>
       </Router>
     );

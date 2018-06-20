@@ -4,20 +4,21 @@ import Button from './CSS/Button'
 import '../App.css'
 
 
+
 import * as routes from '../routes/routes';
 
-const MainLinks = () =>
+const LandingLinks = () =>
   <div>
-    <ul>
-      <li><Link to={routes.OUR_POLICY}></Link></li>
-    </ul>
+    <Link to={routes.MEMBER_PORTAL}><Button primary>Member Portal</Button></Link>
+    <Link to="/findoutmore"><Button primary>Find Out More</Button></Link>
   </div>
 
-const FindoutLink = () =>
-  <div id="na">
-    <ul>
-      <li id="coolButton"><Link to={routes.FIND_OUT_MORE}><Button primary>Find Out More</Button></Link></li>
-    </ul>
-  </div>
+// const FindoutLink = () =>
+//   <div id="na">
+//     <ul>
+//       <li id="coolButton"></li>
+//     </ul>
+//   </div>
 
-export default FindoutLink;
+export { LandingLinks };
+// export { FindoutLink };

@@ -9,4 +9,4 @@ const KupidoLogo = styled.h1`
   margin: 0;
 `
 
-export { KupidoLogo };
+export default KupidoLogo;
