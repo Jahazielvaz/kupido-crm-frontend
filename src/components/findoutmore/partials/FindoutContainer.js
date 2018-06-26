@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 
 const FindoutContainer = styled.div`
-  background: white;
+  border: 2px solid blue;
   min-height: 1200px;
 `
 
-export { FindoutContainer };
+export default FindoutContainer;

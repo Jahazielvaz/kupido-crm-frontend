@@ -29,3 +29,7 @@ hr{
   display: inline-block;
   color: orange;
 }
+
+#navigation{
+  border: 2px solid white;
+}

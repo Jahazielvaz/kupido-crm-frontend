@@ -24,7 +24,7 @@ import styled from 'styled-components';
 //   opacity: .7;
 // `
 
-export const SecondButton = styled.button`
+const SecondButton = styled.button`
 background-color: ${props => (props.primary ? '#222': '#FB9638')};
 border: 2px solid white;
 color: ${props => (props.primary ? 'orange': '#222')};
@@ -35,9 +35,11 @@ display: inline-block;
 font-size: 25px;
 font-family: 'Cinzel', serif;
 font-weight: bold;
-width: 300px;
+width: 250px;
 margin: 10px 20px;
+
 `
 
 // export {TomatoButton};
 export default Button;
+export { SecondButton };

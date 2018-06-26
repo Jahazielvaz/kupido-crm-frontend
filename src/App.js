@@ -23,7 +23,7 @@ class App extends Component {
     return (
       <Router>
         <div id="main-container">
-          <LandingLinks />
+
 
           <Switch>
 
