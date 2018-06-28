@@ -17,11 +17,11 @@ const LandingLinks = () =>
 
 const FindoutLinks = () =>
   <LinksNav>
-    <Link to={routes.HOME}><SecondButton primary>Home</SecondButton></Link>
-    <Link to={routes.ABOUT}><SecondButton>About</SecondButton></Link>
-    <Link to={routes.OUR_POLICY}><SecondButton>Our Policy</SecondButton></Link>
-    <Link to={routes.CONTACT}><SecondButton>Contact</SecondButton></Link>
-    <Link to={routes.SIGN_UP}><SecondButton>Register</SecondButton></Link>
+    <Link to={routes.HOME}><SecondButton >Home</SecondButton></Link>
+    <Link to={routes.ABOUT}><SecondButton >About</SecondButton></Link>
+    <Link to={routes.OUR_POLICY}><SecondButton >Our Policy</SecondButton></Link>
+    <Link to={routes.CONTACT}><SecondButton >Contact</SecondButton></Link>
+    <Link to={routes.SIGN_UP}><SecondButton >Register</SecondButton></Link>
   </LinksNav>
 
 export { LandingLinks };

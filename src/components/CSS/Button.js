@@ -26,7 +26,7 @@ import styled from 'styled-components';
 
 const SecondButton = styled.button`
 background-color: ${props => (props.primary ? '#222': '#FB9638')};
-border: 2px solid white;
+border: 3px solid white;
 color: ${props => (props.primary ? 'orange': '#222')};
 padding: 10px 40px;
 text-align: center;

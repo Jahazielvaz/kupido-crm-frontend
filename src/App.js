@@ -23,10 +23,7 @@ class App extends Component {
     return (
       <Router>
         <div id="main-container">
-
-
           <Switch>
-
             <Route path="/" component={Landing} exact />
             <Route path="/findoutmore" component={FindoutLanding} />
           </Switch>
