@@ -9,7 +9,7 @@ import { FindoutLinks } from '../Navigation';
 
 //Findout Components
 import Landing from '../landing/Landing';
-import About from './subcomponents/About';
+import About from './subcomponents/about/About';
 
 //Routes
 import * as routes from '../../routes/routes';
@@ -19,16 +19,6 @@ const FindoutLanding = () => {
   return(
     <FindoutContainer >
       <Banner />
-
-
-      {/* Findout Section Components */}
-      <Router>
-        <Switch>
-          <Route path={routes.HOME} component={Landing} exact />
-          <Route path={routes.HOME} component={About} exact />
-
-        </Switch>
-      </Router>
     </FindoutContainer>
   );
 };

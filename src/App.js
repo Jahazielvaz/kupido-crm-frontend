@@ -11,6 +11,9 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Landing from './components/landing/Landing';
 import FindoutLanding from './components/findoutmore/FindoutLanding';
 import { LandingLinks } from './components/Navigation';
+import About from './components/findoutmore/subcomponents/about/About';
+import OurPolicy from './components/findoutmore/subcomponents/ourpolicy/OurPolicy';
+import Contact from './components/findoutmore/subcomponents/contact/Contact';
 
 
 
@@ -23,10 +26,16 @@ class App extends Component {
     return (
       <Router>
         <div id="main-container">
-          <Switch>
-            <Route path="/" component={Landing} exact />
-            <Route path="/findoutmore" component={FindoutLanding} />
-          </Switch>
+          {/* <Switch> */}
+            {/* <Route path="/" component={Landing} exact /> */}
+            <Route path={routes.HOME} component={Landing} exact />
+            <Route path={routes.FIND_OUT_MORE} component={FindoutLanding} />
+            <Route path={routes.ABOUT} component={About}  />
+            <Route path={routes.OUR_POLICY} component={OurPolicy} />
+            <Route path={routes.CONTACT} component={Contact} />
+
+            {/* <Route path={routes.HOME} component={About} exact /> */}
+          {/* </Switch> */}
         </div>
       </Router>
     );

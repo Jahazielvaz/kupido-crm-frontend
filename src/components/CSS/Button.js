@@ -35,8 +35,8 @@ display: inline-block;
 font-size: 25px;
 font-family: 'Cinzel', serif;
 font-weight: bold;
-width: 250px;
-margin: 10px 20px;
+width: 230px;
+margin: 10px 10px;
 
 `
 
