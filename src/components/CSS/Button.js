@@ -16,6 +16,10 @@ import styled from 'styled-components';
   margin: 10px;
 `;
 
+const InputOne = styled.input`
+
+`;
+
 // export const TomatoButton = Button.extend`
 //   background: #222;
 //   color: white;
